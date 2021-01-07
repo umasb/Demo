@@ -1,0 +1,7 @@
+from flask import Flask
+uma=Flask(__name__)
+@uma.route('/uma/hello/hyd')
+def sample():
+    return "success"
+print("hello")
+uma.run(port=8080)
